@@ -9,15 +9,15 @@
 
 <body >
   <div id="canvas-container">
-  <canvas id="canvas" width="300" height="300"></canvas>
+  <canvas id="canvas" width="300" height="300" onClick="fillBlue()" ondblclick="fillRed()"></canvas>
     <p>
-      <button id="red">Red</button>
-      <button id="green">Green</button>
-      <button id="blue">Blue</button>
-      <button id="orange">Orange</button>
+      <button id="red" onClick="fillRand('red')">Red</button>
+      <button id="green" onClick="fillRand('green')">Green</button>
+      <button id="blue" onClick="fillRand('blue')">Blue</button>
+      <button id="orange" onClick="fillRand('orange')">Orange</button>
     </p>
     <p>
-      <button id="clear">Clear Canvas</button>
+      <button id="clear" onClick="clean()">Clear Canvas</button>
       <button id="fib">Fibonacci</button>
     </p>
   </div>
